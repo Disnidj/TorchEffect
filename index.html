@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Power of Light CSS</title> 
+    <link rel ="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+
+<body>
+    <section>
+        <h2>GHOST!</h2>
+    </section>
+  
+    <div class ="light"></div>
+    <script type="text/javascript">
+        const light = document.querySelector('.light');
+
+
+        window.addEventListener('mousemove', (e)=>{
+        light.style.setProperty('--x',e.clientX + 'px');
+        light.style.setProperty('--y',e.clientY + 'px');
+    
+})
+    </script>
+
+</body>
+
+</html>
